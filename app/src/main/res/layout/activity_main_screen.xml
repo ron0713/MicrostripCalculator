@@ -1,0 +1,29 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.microstripcalculator.MainScreen"
+android:background="#ffffff">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="24dp"
+    android:background="#ffffff">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="168dp"
+        android:layout_height="167dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:onClick="analysis"
+        app:srcCompat="@drawable/microstrip_card" />
+</LinearLayout>
+</LinearLayout>

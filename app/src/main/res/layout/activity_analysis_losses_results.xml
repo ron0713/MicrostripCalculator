@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.microstripcalculator.AnalysisLossesResults"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <LinearLayout
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/path_4" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:textSize="14dp"
+                android:textColor="#343434"
+                android:gravity="center_vertical"
+                android:text="The conductor loss in dB / unit length is" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="16dp"
+            android:inputType="textPersonName"
+            />
+
+
+        <ImageButton
+            android:id="@+id/imageButton17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="#ffffff"
+            android:onClick="back_home_main"
+            app:srcCompat="@drawable/back_home" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/vector_graphics" />
+
+</RelativeLayout>
+
+

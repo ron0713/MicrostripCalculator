@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.microstripcalculator.SysthesisResults"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="72dp"
+        app:srcCompat="@drawable/vector_clapping" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="We've done the calculations for you!"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+        android:textColor="#343434"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF"
+        android:onClick="show_result"
+        app:srcCompat="@drawable/rectangle_5" />
+</LinearLayout>

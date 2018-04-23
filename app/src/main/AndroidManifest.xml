@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.microstripcalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Analysis"
+            android:label="Analysis" />
+        <activity
+            android:name=".AnalysisResults"
+            android:label="Analysis Results" />
+        <activity
+            android:name=".AnalysisResultsFinal"
+            android:label="Analysis Results" />
+        <activity
+            android:name=".Systhesis"
+            android:label="Synthesis" />
+        <activity
+            android:name=".SysthesisResults"
+            android:label="Synthesis Results" />
+        <activity
+            android:name=".SysthesisResultsFinal"
+            android:label="Synthesis Results" />
+        <activity android:name=".AnalysisThickness" />
+        <activity android:name=".AnalysisFrequency" />
+        <activity android:name=".AnalysisFrequencyResults" />
+        <activity android:name=".AnalysisLosses" />
+        <activity android:name=".AnalysisLossesResults" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
