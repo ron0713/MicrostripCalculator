@@ -1,94 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.microstripcalculator.Systhesis"
     android:orientation="vertical"
-    android:paddingTop="60dp"
-    android:background="#ffffff"
+    android:background="#005792"
    >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="24dp"
-        android:paddingRight="32dp"
-        android:id="@+id/linearLayout">
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
 
-        <TextView
-            android:id="@+id/textView5"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter the value of characteristic impedance in ohm (Zc):"
-            android:textColor="#343434"/>
+            android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-             />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#005792"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:text="Enter the dielectric constant of the substrate (Er):"
-            android:textColor="#343434"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00204a"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="48dp"
+                    android:paddingTop="30dp">
 
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-             />
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the value of characteristic impedance in ohm (Zc):"
+                        android:textColor="#ffffff" />
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:text="Enter the height(h) of the microstrip (mm):"
-            android:textColor="#343434"/>
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fbb44b"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#ffffff"
+                        android:textCursorDrawable="@null" />
 
-        <EditText
-            android:id="@+id/editText20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            />
 
-    </LinearLayout>
+                </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bottom_vector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00204a"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="48dp"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the dielectric constant of the substrate (Er):"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fbb44b"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#ffffff"
+                        android:textCursorDrawable="@null" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00204a"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="48dp"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the height(h) of the microstrip (mm):"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:id="@+id/editText20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fbb44b"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#ffffff"
+                        android:textCursorDrawable="@null" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/forward_button"
-        android:layout_marginRight="27dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="27dp"
-        android:background="#ffffff"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="synthesis_calc"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:background="#005792"
+        android:onClick="synthesis_calc"
+        app:srcCompat="@drawable/forward_button" />
 
-
-</RelativeLayout>
+</LinearLayout>

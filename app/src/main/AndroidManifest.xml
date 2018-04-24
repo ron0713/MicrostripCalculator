@@ -39,7 +39,8 @@
         <activity android:name=".AnalysisFrequencyResults" />
         <activity android:name=".AnalysisLosses" />
         <activity android:name=".AnalysisLossesResults" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AnswerScreen"></activity>
     </application>
 
 </manifest>

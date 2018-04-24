@@ -9,53 +9,44 @@ import android.widget.EditText;
 
 public class AnalysisResultsFinal extends AppCompatActivity {
 
-    Double ere_final,zc_final,ere_t,zc_t,w,h,er,t;
+    Double ere_final,zc_final,w,h,er,t;
 
     EditText ere_ed,zc_ed;
+    Double zc,ere,ere_f,zc_f,ere_t,zc_t,loss;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analysis_results_final);
 
-        Intent calculated_result = getIntent();
+        Intent values = getIntent();
 
-        ere_final = calculated_result.getExtras().getDouble("ere");
-        zc_final = calculated_result.getExtras().getDouble("zc");
-
-        ere_t = calculated_result.getExtras().getDouble("ere_t");
-        zc_t = calculated_result.getExtras().getDouble("zc_t");
-        w = calculated_result.getExtras().getDouble("width");
-        h = calculated_result.getExtras().getDouble("height");
-        er = calculated_result.getExtras().getDouble("dil_constant");
-        t = calculated_result.getExtras().getDouble("thickness");
+        zc =values.getExtras().getDouble("zc");
+        ere = values.getExtras().getDouble("ere");
+        zc_t = values.getExtras().getDouble("zc_t");
+        ere_t =values.getExtras().getDouble("ere_t");
+        ere_f = values.getExtras().getDouble("ere_f");
+        zc_f = values.getExtras().getDouble("zc_f");
+        loss = values.getExtras().getDouble("loss");
 
 
         ere_ed = (EditText)findViewById(R.id.editText5);
         zc_ed = (EditText)findViewById(R.id.editText6);
 
-        ere_ed.setText(Double.toString(ere_final));
-        zc_ed.setText(Double.toString(zc_final));
+        ere_ed.setText(Double.toString(ere));
+        zc_ed.setText(Double.toString(zc));
 
-    }
-
-    public void thickness(View view){
-        Intent thickness_activity = new Intent(this,AnalysisThickness.class);
-        thickness_activity.putExtra("ere",ere_final);
-        thickness_activity.putExtra("zc",zc_final);
-        thickness_activity.putExtra("eret",ere_t);
-        thickness_activity.putExtra("zct",zc_t);
-        thickness_activity.putExtra("w",w);
-        thickness_activity.putExtra("h",h);
-        thickness_activity.putExtra("t",t);
-        thickness_activity.putExtra("er",er);
-
-        startActivity(thickness_activity);
     }
 
     public void back_home_main(View view){
-        Intent main_activity = new Intent(this,MainScreen.class);
-
-        startActivity(main_activity);
+        Intent analysis_result_calc = new Intent(this,AnswerScreen.class);
+        analysis_result_calc.putExtra("zc",zc);
+        analysis_result_calc.putExtra("ere",ere);
+        analysis_result_calc.putExtra("zc_t",zc_t);
+        analysis_result_calc.putExtra("ere_t",ere_t);
+        analysis_result_calc.putExtra("zc_f",zc_f);
+        analysis_result_calc.putExtra("ere_f",ere_f);
+        analysis_result_calc.putExtra("loss",loss);
+        startActivity(analysis_result_calc);
     }
 }

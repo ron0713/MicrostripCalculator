@@ -1,48 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.microstripcalculator.SysthesisResultsFinal"
     android:orientation="vertical"
-    android:background="#ffffff"
-    android:paddingTop="160dp">
+    android:background="#005792"
+    android:paddingTop="40dp">
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/path_4"
-        />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="The width of the microstrip is (mm):"
-        android:textAlignment="center"
-        android:textSize="24dp"
-        android:layout_marginTop="16dp"
-        android:textColor="#343434"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00204a"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="48dp"
+            android:paddingTop="30dp"
+            >
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="72dp"/>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The width of the microstrip is (mm):"
+                android:textColor="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="match_parent"
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        app:srcCompat="@drawable/rectangle_6"
-        android:background="#ffffff"
-        android:onClick="back_home"/>
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="#005792"
+        android:rotation="180"
+        android:onClick="back_home"
+        app:srcCompat="@drawable/forward_button" />
+
+</RelativeLayout>

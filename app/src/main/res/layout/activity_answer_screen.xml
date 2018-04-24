@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.microstripcalculator.AnswerScreen"
+    android:background="#00204a">
+
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00204a"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/withoutthickness"
+        android:onClick="one"/>
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00204a"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/wthickness"
+        android:onClick="two"/>
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#00204a"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/dispersion"
+        android:onClick="three"/>
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00204a"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/microstriploss"
+        android:onClick="four"/>
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00204a"
+        android:layout_marginTop="72dp"
+        app:srcCompat="@drawable/backtohome"
+        android:onClick="home"/>
+</LinearLayout>
+
+

@@ -6,72 +6,64 @@
     android:layout_height="match_parent"
     tools:context="com.example.microstripcalculator.AnalysisLossesResults"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#005792">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginTop="48dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp">
-
-            <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                app:srcCompat="@drawable/path_4" />
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00204a"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="48dp"
+            android:paddingTop="30dp"
+            >
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="16dp"
-                android:textSize="14dp"
-                android:textColor="#343434"
-                android:gravity="center_vertical"
-                android:text="The conductor loss in dB / unit length is" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The conductor loss in dB / unit length is"
+                android:textColor="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                />
+
+
+
 
         </LinearLayout>
-
-        <EditText
-            android:id="@+id/editText18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginLeft="56dp"
-            android:layout_marginRight="16dp"
-            android:inputType="textPersonName"
-            />
-
-
-        <ImageButton
-            android:id="@+id/imageButton17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:background="#ffffff"
-            android:onClick="back_home_main"
-            app:srcCompat="@drawable/back_home" />
-
 
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/vector_graphics" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="#005792"
+        android:rotation="180"
+        android:onClick="back_home_main"
+        app:srcCompat="@drawable/forward_button" />
 </RelativeLayout>
 
 

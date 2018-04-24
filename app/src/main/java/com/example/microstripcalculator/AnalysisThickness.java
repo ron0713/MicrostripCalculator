@@ -9,9 +9,8 @@ import android.widget.EditText;
 public class AnalysisThickness extends AppCompatActivity {
 
     EditText zct_result, eret_result;
-    Double m0,mc;
-    Double w,h,er,t,ere;
-    Double zc_t,ere_t,zc;
+
+    Double zc,ere,ere_f,zc_f,ere_t,zc_t,loss;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +18,13 @@ public class AnalysisThickness extends AppCompatActivity {
 
         Intent values = getIntent();
 
+        zc =values.getExtras().getDouble("zc");
         ere = values.getExtras().getDouble("ere");
-        zc = values.getExtras().getDouble("zc");
-        ere_t = values.getExtras().getDouble("eret");
-        zc_t = values.getExtras().getDouble("zct");
-        w = values.getExtras().getDouble("w");
-        h = values.getExtras().getDouble("h");
-        t = values.getExtras().getDouble("t");
-        er =values.getExtras().getDouble("er");
+        zc_t = values.getExtras().getDouble("zc_t");
+        ere_t =values.getExtras().getDouble("ere_t");
+        ere_f = values.getExtras().getDouble("ere_f");
+        zc_f = values.getExtras().getDouble("zc_f");
+        loss = values.getExtras().getDouble("loss");
 
 
 
@@ -37,25 +35,15 @@ public class AnalysisThickness extends AppCompatActivity {
         eret_result.setText(Double.toString(ere_t));
     }
 
-    public void frequency(View view){
-        Intent content = new Intent(this,AnalysisFrequency.class);
-
-        content.putExtra("zc_t",zc_t);
-        content.putExtra("ere_t",ere_t);
-        content.putExtra("w",w);
-        content.putExtra("h",h);
-        content.putExtra("w",w);
-        content.putExtra("er",er);
-        content.putExtra("t",t);
-        content.putExtra("zc",zc);
-        content.putExtra("ere",ere);
-
-        startActivity(content);
-    }
-
     public void back_home_main(View view){
-        Intent main_activity = new Intent(this,MainActivity.class);
-
-        startActivity(main_activity);
+        Intent analysis_result_calc = new Intent(this,AnswerScreen.class);
+        analysis_result_calc.putExtra("zc",zc);
+        analysis_result_calc.putExtra("ere",ere);
+        analysis_result_calc.putExtra("zc_t",zc_t);
+        analysis_result_calc.putExtra("ere_t",ere_t);
+        analysis_result_calc.putExtra("zc_f",zc_f);
+        analysis_result_calc.putExtra("ere_f",ere_f);
+        analysis_result_calc.putExtra("loss",loss);
+        startActivity(analysis_result_calc);
     }
 }

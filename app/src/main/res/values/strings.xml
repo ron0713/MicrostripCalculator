@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Microstrip Calculator</string>
+    <string name="epsilon">Enter the dielectric constant of the substrate - &#949; :</string>
 </resources>
